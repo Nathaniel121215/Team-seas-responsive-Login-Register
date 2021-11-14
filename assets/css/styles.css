@@ -1,0 +1,317 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+:root
+{
+
+  /*===== Font weight =====*/
+  --font-light:300;
+  --font-regular:400;
+  --font-semi-bold:500;
+  --font-bold:700;
+  
+
+  /*===== Color =====*/
+ 
+
+  --white-color:#FFFFFF;
+  --light-dark-color:#3B4859;
+
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat','Lato';
+  font-weight: 500;
+}
+h1
+{
+  font-size: 22px;
+  color: var(--light-dark-color);
+  font-weight: --;
+}
+/*
+.main__container
+{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url('/assets/img/Mask\ Group\ 1.png');
+  background-size: cover;
+ 
+}
+*/
+.title
+{
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.right__container
+
+{
+  position: relative;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.login, .register
+{
+  position: relative;
+  width: 330px;
+
+
+  overflow: hidden;
+
+  
+
+}
+
+form input[type="text"],
+form input[type="password"]
+{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 18px;
+    border: 1px solid #c4c4c4;
+    padding: .8rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    
+}
+
+label
+{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.86rem;
+    margin-left: 13px;
+    color: var(--light-dark-color);
+}
+
+.input__container.password
+{
+    position: relative;
+    
+}
+
+.input__container.password i
+{
+    position: absolute;
+    top:34px;
+    right: 16px;
+    font-size: 19px;
+}
+
+.login__btn
+{
+  width: 100%;
+  font-size: 15px;
+  font-weight: var(--font-bold);
+  padding: .8rem;
+  border-radius: 18px;
+  border: none;
+  background-color: var(--light-dark-color);
+  color: white;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.middle__textt
+{
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.middle__textt:before
+{
+
+
+  content: '';
+  display: block;
+  position: absolute;
+  width: 56px;
+  margin-left: 37px;
+  height: .10rem;
+  top:50%;
+  background-color: var(--light-dark-color);
+ 
+
+
+
+ 
+}
+
+.middle__textt:after
+{
+
+  content: '';
+  margin-left: 10px;
+  position: absolute;
+  width: 56px;
+  height: .10rem;
+  top:50%;
+  background-color: var(--light-dark-color);
+ 
+
+
+ 
+}
+
+.bottom__icons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  
+}
+.icons
+{
+  width:43px;
+  height:43px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: .2rem;
+  cursor: pointer;
+
+
+ 
+  
+  
+
+}
+
+.middle__text2
+{
+  text-align: center;
+  font-size: 11px;
+  
+}
+
+.left__container
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+  
+
+}
+
+
+.left__title
+{
+  display: block;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 0;
+}
+
+.left__description
+{
+  display: block;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  font-weight: var(--font-light);
+}
+
+a{
+  text-decoration: none;
+  color: var(--light-dark-color);
+}
+
+
+
+.register
+{
+  position: fixed;
+  right: -100%;
+
+ 
+ 
+  transition: 1s;
+}
+
+.pspace
+{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
+.show
+{
+  position: relative;
+  right: 0;
+  
+
+  transition: 1s;
+
+}
+.hide
+{
+  position: absolute;
+  right: -100%;
+  transition: 1s;
+
+
+}
+
+
+
+
+@media screen and (min-width:768px) 
+{
+  .main__container
+  {
+    background: none;
+    display: grid;
+        
+    
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+  }
+  .left__container
+  {
+   
+    height: auto;
+    display:flex;
+    
+  }
+
+  .left__container .right__container
+  {
+    height: auto;
+  }
+
+  .right__container form
+{
+  
+  border-radius: 12px;
+  background: linear-gradient(315deg, #e6e6e6, #ffffff);
+  box-shadow:  -12px -12px 24px #d9d9d9,12px 12px 24px #ffffff;
+  padding: 4rem;
+}
+  
+}
